@@ -1,0 +1,20 @@
+<div class="container-fluid" style="padding: 20px">
+    <div class="panel panel-default">
+        <div [ngClass]="{
+            'panel-body': !hoverCheck1,
+            'panel-heading': hoverCheck1
+        }" on-click="onClick1()"
+        on-mouseenter="onHover1()" on-mouseleave="onHover1()">{{title}}<span [ngClass]="{'glyphicon-menu-down': !isClicked1, 'glyphicon-menu-up': isClicked1}" class="pull-right glyphicon"></span>
+        </div>
+        <div *ngIf="isClicked1" class="panel-body"><ng-content select=".body1"></ng-content></div>
+
+    </div>
+</div>
+
+
+<!--<div [ngClass]="{-->
+            <!--'panel-body': !hoverCheck2,-->
+            <!--'panel-heading': hoverCheck2-->
+        <!--}" on-click="onClick2()"-->
+     <!--on-mouseenter="onHover2()" on-mouseleave="onHover2()">Panel heading 2<span [ngClass]="{'glyphicon-menu-down': !isClicked2, 'glyphicon-menu-up': isClicked2}" class="pull-right glyphicon"></span></div>-->
+<!--<div *ngIf="isClicked2" class="panel-body"><ng-content select=".body2"></ng-content></div>-->
