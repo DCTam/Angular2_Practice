@@ -1,4 +1,4 @@
-System.register(['angular2/core', './favorite.component', './heart.component', './voter.component', './tweet.component', './tweet.service', './zippy.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './favorite.component', './heart.component', './voter.component', './tweet.component', './tweet.service', './zippy.component', './contact-form.component', './email-form.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './favorite.component', './heart.component', '
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, favorite_component_1, heart_component_1, voter_component_1, tweet_component_1, tweet_service_1, zippy_component_1;
+    var core_1, favorite_component_1, heart_component_1, voter_component_1, tweet_component_1, tweet_service_1, zippy_component_1, contact_form_component_1, email_form_component_1;
     var AppComponent;
     return {
         setters:[
@@ -34,6 +34,12 @@ System.register(['angular2/core', './favorite.component', './heart.component', '
             },
             function (zippy_component_1_1) {
                 zippy_component_1 = zippy_component_1_1;
+            },
+            function (contact_form_component_1_1) {
+                contact_form_component_1 = contact_form_component_1_1;
+            },
+            function (email_form_component_1_1) {
+                email_form_component_1 = email_form_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
@@ -43,8 +49,8 @@ System.register(['angular2/core', './favorite.component', './heart.component', '
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n                <zippy title=\"Who this\">\n                    <div class=\"body1\">Body 1 stuff</div>\n                    <div class=\"body2\">Body 2 stuff</div>\n                </zippy>\n                <zippy>\n                    <div class=\"body1\">Body 1 stsdfsdfsdfuff</div>\n                    <div class=\"body2\">Body 2 stuff</div>\n                </zippy>\n                \n              ",
-                        directives: [favorite_component_1.FavoriteComponent, heart_component_1.LikeHeart, voter_component_1.VoterComp, tweet_component_1.Tweet, zippy_component_1.ZippyComponent],
+                        template: "\n                <email-form></email-form>\n               \n                \n              ",
+                        directives: [favorite_component_1.FavoriteComponent, heart_component_1.LikeHeart, voter_component_1.VoterComp, tweet_component_1.Tweet, zippy_component_1.ZippyComponent, contact_form_component_1.ContactFormComponent, email_form_component_1.EmailFormComponent],
                         providers: [tweet_service_1.TweetService]
                     }), 
                     __metadata('design:paramtypes', [tweet_service_1.TweetService])

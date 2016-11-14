@@ -6,23 +6,19 @@ import {VoterComp} from './voter.component';
 import {Tweet} from './tweet.component';
 import {TweetService} from './tweet.service';
 import {ZippyComponent} from './zippy.component';
+import {ContactFormComponent} from './contact-form.component';
+import {EmailFormComponent} from './email-form.component';
 
 
 
 @Component({
     selector: 'my-app',
     template: `
-                <zippy title="Who this">
-                    <div class="body1">Body 1 stuff</div>
-                    <div class="body2">Body 2 stuff</div>
-                </zippy>
-                <zippy>
-                    <div class="body1">Body 1 stsdfsdfsdfuff</div>
-                    <div class="body2">Body 2 stuff</div>
-                </zippy>
+                <email-form></email-form>
+               
                 
               `,
-    directives: [FavoriteComponent, LikeHeart, VoterComp, Tweet, ZippyComponent],
+    directives: [FavoriteComponent, LikeHeart, VoterComp, Tweet, ZippyComponent, ContactFormComponent, EmailFormComponent],
     providers: [TweetService]
 })
 export class AppComponent {
